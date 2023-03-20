@@ -1,0 +1,49 @@
+.button {
+    height: 5.2rem;
+    padding: 15px 45px;
+    @extend %font-primary;
+    @include font($size: 1.7rem, $height: 130%);
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+    border-radius: 100px;
+
+    width: fit-content;
+    transition: 300ms;
+    cursor: $pointer;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $color-primary-light;
+    }
+}
+
+.button-colored {
+    background-color: $color-primary;
+    border-color: $color-primary;
+
+
+}
+
+.button-bordered {
+    background-color: transparent;
+    border: solid 2px $color-primary;
+}
+
+.arrow {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: $pointer;
+    transition: 300ms;
+    
+
+    &:hover {
+        background-color: $color-primary-light;
+    }
+    // @media screen and (max-width: 767px) {
+    //     order: 2;
+    //     margin-top: 25px;
+    // }
+}

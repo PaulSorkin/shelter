@@ -1,0 +1,49 @@
+.header__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+
+    @media screen and (max-width: 1279px) {
+        height: 120px;
+    }
+
+}
+
+.company__name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: $cursor;
+}
+
+.subtitle {
+    @extend %font-secondary;
+    @include font($size: 1.3rem, $height: 1.5rem);
+    letter-spacing: 0.1em;
+}
+
+
+/*NAVIGATION*/
+.nav {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.nav__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav_link {
+    @extend %font-secondary;
+    @include font($size: 1.5rem, $height: 160%);
+    text-decoration: none;
+    transition: 300ms;
+    cursor: $pointer;
+}

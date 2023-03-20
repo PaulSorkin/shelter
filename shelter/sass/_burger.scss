@@ -1,0 +1,84 @@
+.burger {
+    width: 3rem;
+    height: 3rem;
+    display: none;
+    flex-direction: column;
+    gap: 0.6rem;
+    position: absolute;
+    top: 49px;
+    right: 53px;
+    z-index: 10;
+    transition: 0.5s;
+    @media screen and (max-width: 767px) {
+        display: flex;
+    }
+}
+
+.active-burger {
+    flex-direction: row;
+}
+
+.line {
+    height: 2px;
+    transition: 0.5s;
+}
+
+.burger.active-burger .line {
+    width: 2px;
+    height: 30px;
+}
+
+.small__nav {
+    width: 32rem;
+    height: 100%;
+    background-color: $color-dark-3xl;
+    position: fixed;
+    right: -320px;
+    top: 0;
+    z-index: 5;
+    padding: 3rem 1rem 0 1rem;
+    transition: 0.5s;
+    .company__name {
+        align-self: flex-start;
+    }
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;;
+    }
+}
+
+.open {
+    right: 0px;
+}
+
+
+
+.small__nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    list-style: none;
+    padding-top: 145px;
+    padding-left: 0;
+}
+
+.small_nav_link {
+    @extend %font-secondary;
+    @include font($size: 3.2rem, $height: 160%);
+    color: $color-dark-s;
+    text-decoration: none;
+    transition: 300ms;
+    cursor: $pointer;
+
+    &:hover {
+        border-bottom: $color-primary solid 3px;
+    }
+}
+
+.small_active_link {
+    color: $color-light-s;
+    border-bottom: $color-primary solid 3px;
+}

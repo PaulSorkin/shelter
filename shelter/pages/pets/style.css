@@ -178,7 +178,6 @@ h1 {
   font-weight: 400;
   font-size: 32px;
   line-height: 110%;
-  /* or 35px */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,7 +195,6 @@ h3 {
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
-  /* or 45px */
   color: #545454;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,7 +222,6 @@ h3 {
   font-weight: 400;
   font-size: 13px;
   line-height: 15px;
-  /* identical to box height */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,7 +545,6 @@ h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
-  /* identical to box height */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,7 +677,6 @@ h3 {
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
-  /* or 45px */
   letter-spacing: 0.06em;
   color: #FFFFFF;
   margin: 0;
@@ -722,7 +717,6 @@ h3 {
   font-weight: 400;
   font-size: 20px;
   line-height: 115%;
-  /* identical to box height, or 23px */
   letter-spacing: 0.06em;
   color: #F1CDB3;
   padding-left: 10px;
