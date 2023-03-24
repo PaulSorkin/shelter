@@ -695,6 +695,7 @@ p {
   position: absolute;
   left: 0px;
   top: 45%;
+  z-index: 5;
 }
 
 @media (max-width: 425px) {
@@ -708,6 +709,7 @@ p {
   position: absolute;
   right: 0px;
   top: 45%;
+  z-index: 5;
 }
 
 @media (max-width: 425px) {
@@ -722,13 +724,13 @@ p {
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .carousel-wrapper {
     max-width: 58rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 711px) {
   .carousel-wrapper {
     max-width: 27rem;
   }
@@ -812,7 +814,7 @@ p {
   gap: 9rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .pet__items {
     gap: 4rem;
   }

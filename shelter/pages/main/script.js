@@ -177,8 +177,8 @@ darken.addEventListener('click', closeMenu);
 //     }
 //   ]
 
-const tabletWidth = window.matchMedia('(max-width: 768px)');
-const mobileWidth = window.matchMedia('(max-width: 425px)');
+const tabletWidth = window.matchMedia('(max-width: 1024px)');
+const mobileWidth = window.matchMedia('(max-width: 711px)');
 
 
 const BTN_LEFT = document.querySelector('#button-left');

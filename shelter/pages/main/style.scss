@@ -260,6 +260,7 @@
     position: absolute;
     left: 0px;
     top: 45%;
+    z-index: 5;
     @media (max-width: 425px) {
         left: 19%;
         top: 84%;
@@ -269,6 +270,7 @@
     position: absolute;
     right: 0px;
     top: 45%;
+    z-index: 5;
     @media (max-width: 425px) {
         right: 19%;
         top: 84%;
@@ -280,10 +282,10 @@
     overflow: hidden;
     // display: flex;
     // justify-content: center;
-    @media (max-width: $tablet-width) {
+    @media (max-width: 1024px) {
         max-width: 58rem;
     }
-    @media (max-width: $mobile-width) {
+    @media (max-width: 711px) {
         max-width: 27rem;
     }
 }
@@ -334,7 +336,7 @@
     justify-content: space-between;
     gap: 9rem;
 
-    @media (max-width: $tablet-width) {
+    @media (max-width: 1024px) {
         gap: 4rem;
     }
     
