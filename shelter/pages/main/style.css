@@ -23,7 +23,7 @@
   src: url("../assets/fonts/georgia/georgia-italic.ttf");
 }
 
-h1, h2, h3, .button, .pet-name {
+h1, h2, h3, .button, .pet-name, .help_name {
   font-family: 'Georgia', serif;
 }
 
@@ -433,6 +433,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
@@ -512,14 +513,14 @@ p {
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media (max-width: 768px) {
   .not_only_pic {
     width: 569px;
     margin-left: 20%;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .not_only_pic {
     width: 26rem;
     margin-top: 1.6%;
@@ -636,8 +637,20 @@ p {
   padding-bottom: 10em;
 }
 
+@media (max-width: 320px) {
+  .our__friends__block {
+    padding-top: 4.5rem;
+  }
+}
+
 .our__friends__block h3 {
   text-align: center;
+}
+
+@media (max-width: 320px) {
+  .our__friends__block h3 {
+    max-width: 98%;
+  }
 }
 
 .all__pets {
@@ -652,10 +665,10 @@ p {
           justify-content: center;
   width: 100%;
   padding-top: 6.3rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 6rem;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 768px) {
   .all__pets {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -664,6 +677,13 @@ p {
             column-gap: 80px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 320px) {
+  .all__pets {
+    padding-top: 4rem;
+    padding-bottom: 12rem;
   }
 }
 
@@ -677,19 +697,46 @@ p {
   top: 45%;
 }
 
+@media (max-width: 425px) {
+  #button-left {
+    left: 19%;
+    top: 84%;
+  }
+}
+
 #button-right {
   position: absolute;
   right: 0px;
   top: 45%;
 }
 
+@media (max-width: 425px) {
+  #button-right {
+    right: 19%;
+    top: 84%;
+  }
+}
+
 .carousel-wrapper {
-  max-width: 82.5%;
+  max-width: 99rem;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    max-width: 58rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .carousel-wrapper {
+    max-width: 27rem;
+  }
 }
 
 .carousel {
   position: relative;
+  width: 300%;
   left: -100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -700,6 +747,9 @@ p {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @-webkit-keyframes move-right {
@@ -756,8 +806,16 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 9rem;
-  padding-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .pet__items {
+    gap: 4rem;
+  }
 }
 
 @media screen and (max-width: 1279px) {
@@ -781,12 +839,20 @@ p {
       -ms-flex-align: center;
           align-items: center;
   background-color: #FAFAFA;
-  gap: 3rem;
+  gap: 2.8rem;
   cursor: url(../../assets/icons/icon_mouse.svg), auto;
   -webkit-transition: 300ms;
   transition: 300ms;
   min-width: 5rem;
   padding-bottom: 3rem;
+  width: 27rem;
+  height: 43.5rem;
+}
+
+@media (max-width: 320px) {
+  .pet__item {
+    gap: 3rem;
+  }
 }
 
 .pet__item:hover {
@@ -828,41 +894,21 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 90px 40px 100px 40px;
-  gap: 60px;
+  padding: 9rem 4rem 10rem 4rem;
+  gap: 5.5rem;
 }
 
-@media screen and (max-width: 1279px) {
+@media (max-width: 768px) {
   .how__to__help__block {
-    padding-top: 80px;
-    padding-left: 30px;
-    padding-right: 30px;
-    gap: 40px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .how__to__help__block {
-    padding: 40px 10px 40px 10px;
+    padding-top: 8rem;
   }
 }
 
 .how__to__help__block h3 {
-  max-width: 310px;
   text-align: center;
 }
 
-@media screen and (max-width: 767px) {
-  .how__to__help__block h3 {
-    font-size: 25px;
-    line-height: 130%;
-    text-align: center;
-    letter-spacing: 0.06em;
-    padding: 0 15px;
-  }
-}
-
-.how__to__help__block .all__help {
+.all__help {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -875,27 +921,27 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 120px;
-          column-gap: 120px;
-  row-gap: 55px;
+  -webkit-column-gap: 12rem;
+          column-gap: 12rem;
+  row-gap: 5.5rem;
 }
 
-@media screen and (max-width: 1279px) {
-  .how__to__help__block .all__help {
-    -webkit-column-gap: 60px;
-            column-gap: 60px;
+@media (max-width: 768px) {
+  .all__help {
+    -webkit-column-gap: 6rem;
+            column-gap: 6rem;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .how__to__help__block .all__help {
-    -webkit-column-gap: 30px;
-            column-gap: 30px;
-    row-gap: 25px;
+@media (max-width: 320px) {
+  .all__help {
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+    row-gap: 2.5rem;
   }
 }
 
-.how__to__help__block .all__help .help__item {
+.help__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -906,48 +952,42 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 25px;
+  gap: 3.1rem;
 }
 
 @media screen and (max-width: 1279px) {
-  .how__to__help__block .all__help .help__item {
-    width: 170px;
+  .help__item {
+    width: 17rem;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .how__to__help__block .all__help .help__item {
-    width: 130px;
+  .help__item {
+    width: 13rem;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .how__to__help__block .all__help .help__item .help_pic {
-    width: 50px;
-    height: 50px;
+  .help_pic {
+    width: 5rem;
+    height: 5rem;
   }
 }
 
-.how__to__help__block .all__help .help__item .help_name {
-  font-family: 'Georgia';
+.help_name {
+  font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
   line-height: 115%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #545454;
 }
 
 @media screen and (max-width: 767px) {
-  .how__to__help__block .all__help .help__item .help_name {
-    font-size: 15px;
+  .help_name {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
     line-height: 110%;
   }
 }

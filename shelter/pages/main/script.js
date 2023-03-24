@@ -1,6 +1,6 @@
 import pets from '../../assets/pets.json' assert { type: "json" }
 
-console.log(pets)
+//console.log(pets)
 
 //Burger====
 const burger = document.querySelector('.burger');
@@ -178,7 +178,7 @@ darken.addEventListener('click', closeMenu);
 //   ]
 
 const tabletWidth = window.matchMedia('(max-width: 768px)');
-const mobileWidth = window.matchMedia('(max-width: 320px)');
+const mobileWidth = window.matchMedia('(max-width: 425px)');
 
 
 const BTN_LEFT = document.querySelector('#button-left');
@@ -212,11 +212,12 @@ const allCards = [0, 1, 2, 3, 4, 5, 6, 7];
 let nowActive;
 if (mobileWidth.matches) {
   nowActive = [4];
-} if (tabletWidth.matches) {
-nowActive = [4, 0];
 } else {
-nowActive = [2, 0, 5];
-}
+  if (tabletWidth.matches) {
+    nowActive = [4, 0];
+} else {
+nowActive = [4, 0, 2];
+}}
 
 let restCards;
 let sideCards;
@@ -235,21 +236,17 @@ function setCards() {
   restCards = allCards.filter(x => !nowActive.includes(x)); //returns other cards
   if (mobileWidth.matches) {
     sideCards = randomCards(1, restCards);
-  }
-  if (tabletWidth.matches) {
-    sideCards = randomCards(2, restCards);
   } else {
-    sideCards = randomCards(3, restCards);
+    if (tabletWidth.matches) {
+      sideCards = randomCards(2, restCards);
+    } else {
+      sideCards = randomCards(3, restCards);
+    }
   }
+ 
   return sideCards;
 }
 setCards();
-
-  
-
-
-
-
 
 // let nowActive  = [2, 0, 5];
 // let restCards = allCards.filter(x => !nowActive.includes(x)); //returns 5 other cards
