@@ -1514,7 +1514,7 @@ p {
           align-items: center;
   gap: 10px;
   text-decoration: none;
-  cursor: url(../../assets/icons/icon_mouse.svg), auto;
+  cursor: url(../../assets/icons/icon_mouse_hover.svg), pointer;
 }
 
 @media screen and (max-width: 767px) {
