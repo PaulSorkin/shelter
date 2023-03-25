@@ -5,6 +5,7 @@
 @import "../../sass/header";
 @import "../../sass/burger";
 @import "../../sass/buttons";
+@import "../../sass/footer";
 @import "../../sass/modal";
 
 
@@ -41,19 +42,10 @@
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-    //row-gap: 2.5rem;
 
     @media (max-width: $tablet-width) {
         padding-top: 3rem;
     }
-
-    // @media screen and (max-width: 1279px) {
-    //     padding-left: 75px;
-    //     align-items: flex-start;
-    // }
-    // @media screen and (max-width: 767px) {
-    //     padding: 0 10px;
-    // }
 }
 
 
@@ -121,7 +113,6 @@
     padding-top: 8rem;
     padding-right: 6rem;
     padding-bottom: 10rem;
-    //padding: 8rem 6rem 10rem 0;
     flex-wrap: wrap-reverse;
 
     @media (max-width: $tablet-width) {
@@ -135,17 +126,6 @@
         padding-bottom: 4rem;
         gap: 4rem;
     }
-
-    // @media screen and (max-width: 1279px) {
-    //     justify-content: center;
-    //     column-gap: 120px;
-    //     row-gap: 75px;
-    //     padding: 80px 0 105px 0;
-    // }
-    // @media screen and (max-width: 767px) {
-    //     padding: 40px 10px 40px 10px;
-    //     row-gap: 40px;
-    // }
 }
 
 .about__info {
@@ -166,25 +146,6 @@
         gap: 2.2rem;
         align-items: center;
     }
-
-    // @media screen and (max-width: 1279px) {
-    //     gap: 25px;
-    // }
-    // @media screen and (max-width: 767px) {
-    //     gap: 25px;
-    //     padding-bottom: 0;
-    // }
-
-    // h3 {
-    //     max-width: 370px;
-    //     @media screen and (max-width: 767px) {
-    //         font-size: 25px;
-    //         line-height: 130%;
-    //         text-align: center;
-    //         letter-spacing: 0.06em;
-    //         padding: 0 20px;
-    //     }
-    // }
 
     .about_text {
         @extend %font-secondary;
@@ -215,16 +176,12 @@
     justify-content: center;
     align-items: center;
     padding-top: 8rem;
-    padding-bottom: 10em;
+    padding-bottom: 10rem;
 
     @media (max-width: $mobile-width) {
         padding-top: 4.5rem;
+        padding-bottom: 4rem;
     }
-    // @media screen and (max-width: 767px) {
-    //     padding-top: 45px;
-    //     padding-bottom: 43px;
-    //     gap: 40px;
-    // }
 
     h3 {
         text-align: center;
@@ -242,7 +199,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-top: 6.3rem;
+    padding-top: 6rem;
     padding-bottom: 6rem;
     @media (max-width: $tablet-width) {
         justify-content: center;
@@ -251,7 +208,7 @@
     }
     @media (max-width: $mobile-width) {
         padding-top: 4rem;
-        padding-bottom: 12rem;
+        padding-bottom: 11.5rem;
     }
 }
 #all__pets {
@@ -281,8 +238,6 @@
 .carousel-wrapper {
     max-width: 99rem;
     overflow: hidden;
-    // display: flex;
-    // justify-content: center;
     @media (max-width: 1024px) {
         max-width: 58rem;
     }
@@ -294,13 +249,10 @@
 .carousel {
     position: relative;
     width: 300%;
-    //left: calc( - 1 / 3);
     left: -100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    //gap: 9rem;
-    //padding-bottom: 3rem;
     justify-content: space-between;
 }
 
@@ -340,18 +292,13 @@
     @media (max-width: 1024px) {
         gap: 4rem;
     }
-    
-
-    // @media screen and (max-width: 1279px) {
-    //     gap: 40px;
-    // }
 }
 
-.hide_first {                                                   //DO I NEED IT???
-    @media screen and (max-width: 1279px) {
-        display: none;
-    }
-}
+// .hide_first {                                                   //DO I NEED IT???
+//     @media screen and (max-width: 1279px) {
+//         display: none;
+//     }
+// }
 
 .pet__item {
     display: flex;
@@ -382,11 +329,11 @@
     }
 }
 
-.hide_second {                                          //DO I NEED THIS?
-    @media screen and (max-width: 767px) {
-        display: none;
-    }
-}
+// .hide_second {                                          //DO I NEED THIS?
+//     @media screen and (max-width: 767px) {
+//         display: none;
+//     }
+// }
 
 .pet_img {
     width: 27rem;
@@ -404,30 +351,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 9rem 4rem 10rem 4rem;
-    gap: 5.5rem;
+    padding: 8.7rem 4rem 10rem 4rem;
+    gap: 6rem;
 
     @media (max-width: $tablet-width) {
         padding-top: 8rem;
+        gap: 5.7rem;
+    }
+    @media (max-width: $mobile-width) {
+        padding: 4.4rem 1.5rem 4.2rem 1.5rem;
+        gap: 4.2rem;
     }
 
     h3 {
         text-align: center;
-    }
-    
-
-    //     h3 {
-    //     max-width: 310px;
-    //     text-align: center;
-    //     @media screen and (max-width: 767px) {
-    //         font-size: 25px;
-    //         line-height: 130%;
-    //         text-align: center;
-    //         letter-spacing: 0.06em;
-    //         padding: 0 15px;
-    //     }
-    // }
-    
+    }    
 }
 
 .all__help {
@@ -444,7 +382,8 @@
     }
     @media (max-width: $mobile-width) {
         column-gap: 3rem;
-        row-gap: 2.5rem;
+        row-gap: 3rem;
+        justify-content: flex-start;
     }
 }
 
@@ -452,18 +391,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3.1rem;
+    gap: 3rem;
 
-    @media screen and (max-width: 1279px) {
+    @media (max-width: $tablet-width) {
         width: 17rem;
     }
-    @media screen and (max-width: 767px) {
+    @media (max-width: $mobile-width) {
         width: 13rem;
+        gap: 2rem;
     }
 }
 
 .help_pic {
-    @media screen and (max-width: 767px) {
+    @media (max-width: $mobile-width) {
         width: 5rem;
         height: 5rem;
     }
@@ -474,224 +414,135 @@
     @include font($size: 2rem, $height: 115%);
     letter-spacing: 0.06em;
     color: $color-dark-l;
-    @media screen and (max-width: 767px) {
+    @media (max-width: $mobile-width) {
         @include font($size: 1.5rem, $height: 110%);
     }
 }
 
 .donation {
     background-color: $color-light-l;
-
-    .donation__block {
-        display: flex;
-        padding:75px 170px 105px 145px;
-        justify-content: center;
-        gap: 30px;
-        flex-wrap: wrap-reverse;
-
-        @media screen and (max-width: 1279px) {
-            padding-top: 82px;
-            padding-bottom: 96px;
-        }
-        @media screen and (max-width: 767px) {
-            padding: 45px 10px 43px 10px;
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .donation_pic {
-            padding-top: 10px;
-
-            @media screen and (max-width: 1279px) {
-                padding-top: 30px;
-                padding-left: 15px;
-            }
-            @media screen and (max-width: 767px) {
-                width: 260px;
-                padding: 10px 0 0 0;
-            }
-        }
-
-        .donation__info {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 20px;
-            @media screen and (max-width: 767px) {
-                justify-content: center;
-                align-items: center;
-                gap: 22px;
-            }
-
-            .about_text {
-                font-family: 'Georgia';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 110%;
-
-                display: flex;
-                align-items: center;
-                letter-spacing: 0.06em;
-                color: $color-dark-l;
-                margin: 0;
-                @media screen and (max-width: 767px) {
-                    text-align: center;
-                    letter-spacing: 0;
-                }
-            }
-            
-
-            .credit__cart {
-                background-color: $color-primary;
-                border-radius: 9px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 15px;
-                padding: 0 15px;
-                height: 43px;
-
-                .card_number {
-                    font-family: 'Georgia';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 20px;
-                    line-height: 115%;
-
-                    display: flex;
-                    align-items: center;
-                    letter-spacing: 0.06em;
-                    color: $color-dark-l;
-                    text-decoration: none;
-                    cursor: $cursor;
-                    @media screen and (max-width: 767px) {
-                        font-size: 15px;
-                        line-height: 110%;
-                    }
-                }
-            }
-
-            .low_letters_text_2 {
-                display: none;
-                @media screen and (max-width: 767px) {
-                    display: block;
-                    font-family: 'Arial';
-                    font-style: italic;
-                    font-weight: 400;
-                    font-size: 12px;
-                    line-height: 18px;
-
-                    display: flex;
-                    align-items: center;
-                    color: #B2B2B2;
-
-                    margin: 0;
-                    text-align: justify;
-                    padding: 0 10px;
-                }
-            }
-
-            .low_letters_text {
-                font-family: 'Arial';
-                font-style: italic;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 18px;
-
-                display: flex;
-                align-items: center;
-                color: #B2B2B2;
-
-                margin: 0;
-
-                @media screen and (max-width: 767px) {
-                    display: none;
-                }
-            }
-
-        }
-    }
 }
 
-.footer {
-    background: $gradient;
-}
-
-.three__columns__block {
+.donation__block {
     display: flex;
-    justify-content: center;
-    padding-top: 40px;
-    flex-wrap: wrap;
-    column-gap: 12.5%;
-    row-gap: 65px;
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+    padding-left: 18rem;
+    flex-wrap: wrap-reverse;
 
-    @media screen and (max-width: 1279px) {
-        padding-top: 15px;
-        column-gap: 6%;
-        row-gap: 50px;
+    @media (max-width: $tablet-width) {
+        padding: 8rem 3rem 10rem 3rem;
+        justify-content: center;
+        gap: 6rem;
     }
-    @media screen and (max-width: 767px) {
-        row-gap: 25px;
+    @media (max-width: $mobile-width) {
+        padding: 4.2rem 1rem 4.1rem 1rem;
+        gap: 4.5rem;
     }
-
 }
 
-.contacts__collumn {
+.donation_pic {
+    max-width: 86.7%;
+}
+
+.donation__info {
     display: flex;
     flex-direction: column;
-    padding-top: 15px;
-    gap: 40px;
-    width: 300px;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2rem;
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+    }
 }
 
-.contacts_heading {
+.about_donation_text {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 130%;
+    font-size: 15px;
+    line-height: 110%;
 
+    display: flex;
+    align-items: center;
     letter-spacing: 0.06em;
-    color: $color-light-xl;
+    color: $color-dark-l;
     margin: 0;
     @media screen and (max-width: 767px) {
-        font-size: 25px;
         text-align: center;
+        letter-spacing: 0;
+    }
+}
+
+.credit__cart {
+    background-color: $color-primary;
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 0 15px;
+    height: 43px;
+}
+
+.card_number {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+    text-decoration: none;
+    cursor: $cursor;
+    @media screen and (max-width: 767px) {
+        font-size: 15px;
+        line-height: 110%;
+    }
+}
+
+.low_letters_text_2 {
+    display: none;
+    @media screen and (max-width: 767px) {
+        display: block;
+        font-family: 'Arial';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+
+        display: flex;
+        align-items: center;
+        color: #B2B2B2;
+
+        margin: 0;
+        text-align: justify;
         padding: 0 10px;
     }
 }
 
-.contacts_link {
+.low_letters_text {
+    font-family: 'Arial';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
     display: flex;
     align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    cursor: $pointer;
+    color: #B2B2B2;
+
+    margin: 0;
+
     @media screen and (max-width: 767px) {
-        justify-content: center;
-    }
-
-    .contact_link_text {
-        text-decoration: none;
-
-        font-family: 'Georgia';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 115%;
-
-        letter-spacing: 0.06em;
-        color: $color-primary;
-        padding-left: 10px;
-    }
-}
-
-.contacts_pet_pic {
-    @media screen and (max-width: 767px) {
-        width: 260px;
-        padding-top: 15px;
+        display: none;
     }
 }
