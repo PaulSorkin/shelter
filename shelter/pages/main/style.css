@@ -62,7 +62,6 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
-  color: #F1CDB3;
   letter-spacing: 0.06em;
   margin: 0;
 }
@@ -164,13 +163,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 180px;
-}
-
-@media screen and (max-width: 1279px) {
-  .header__block {
-    height: 120px;
-  }
 }
 
 .company__name {
@@ -185,7 +177,8 @@ p {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  cursor: url(../../assets/icons/icon_mouse.svg), auto;
+  cursor: url(../../assets/icons/icon_mouse_hover.svg), pointer;
+  text-decoration: none;
 }
 
 .subtitle {
@@ -234,8 +227,8 @@ p {
           flex-direction: column;
   gap: 0.6rem;
   position: absolute;
-  top: 49px;
-  right: 53px;
+  top: 4.9rem;
+  right: 5.3rem;
   z-index: 10;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -257,13 +250,13 @@ p {
 }
 
 .line {
-  height: 2px;
+  height: 0.2rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 .burger.active-burger .line {
-  width: 2px;
+  width: 0.2rem;
   height: 30px;
 }
 
@@ -761,9 +754,76 @@ p {
   display: none;
 }
 
+.pet__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FAFAFA;
+  gap: 2.8rem;
+  cursor: url(../../assets/icons/icon_mouse.svg), auto;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  min-width: 5rem;
+  padding-bottom: 3rem;
+  width: 27rem;
+  height: 43.5rem;
+}
+
+@media (max-width: 320px) {
+  .pet__item {
+    gap: 3rem;
+  }
+}
+
+.pet__item:hover {
+  background-color: white;
+}
+
+.pet__item:hover .button {
+  background-color: #FDDCC4;
+}
+
+.pet_img {
+  width: 27rem;
+  border-radius: 9px 9px 0px 0px;
+}
+
+.pet-name {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.3rem;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
 .top__block {
   background: -webkit-gradient(linear, left top, right top, from(#5B483A), to(#262425));
   background: linear-gradient(to right, #5B483A, #262425);
+}
+
+.header__block {
+  height: 18rem;
+}
+
+@media (max-width: 768px) {
+  .header__block {
+    height: 12rem;
+  }
+}
+
+h1 {
+  color: #F1CDB3;
 }
 
 .subtitle {
@@ -1186,59 +1246,6 @@ p {
   .pet__items {
     gap: 4rem;
   }
-}
-
-.pet__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #FAFAFA;
-  gap: 2.8rem;
-  cursor: url(../../assets/icons/icon_mouse.svg), auto;
-  -webkit-transition: 300ms;
-  transition: 300ms;
-  min-width: 5rem;
-  padding-bottom: 3rem;
-  width: 27rem;
-  height: 43.5rem;
-}
-
-@media (max-width: 320px) {
-  .pet__item {
-    gap: 3rem;
-  }
-}
-
-.pet__item:hover {
-  background-color: white;
-}
-
-.pet__item:hover .button {
-  background-color: #FDDCC4;
-}
-
-.pet_img {
-  width: 27rem;
-  border-radius: 9px 9px 0px 0px;
-}
-
-.pet-name {
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2.3rem;
-  letter-spacing: 0.06em;
-  color: #545454;
 }
 
 .how__to__help__block {

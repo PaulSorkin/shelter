@@ -5,8 +5,8 @@
     flex-direction: column;
     gap: 0.6rem;
     position: absolute;
-    top: 49px;
-    right: 53px;
+    top: 4.9rem;
+    right: 5.3rem;
     z-index: 10;
     transition: 0.5s;
     @media screen and (max-width: 767px) {
@@ -19,12 +19,12 @@
 }
 
 .line {
-    height: 2px;
+    height: 0.2rem;
     transition: 0.5s;
 }
 
 .burger.active-burger .line {
-    width: 2px;
+    width: 0.2rem;
     height: 30px;
 }
 

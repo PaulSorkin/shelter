@@ -7,10 +7,23 @@
 @import "../../sass/buttons";
 @import "../../sass/footer";
 @import "../../sass/modal";
+@import "../../sass/pet_card";
 
 
 .top__block {
     background: $gradient;
+}
+
+.header__block {
+    height: 18rem;
+
+    @media (max-width: $tablet-width) {
+        height: 12rem;
+    }
+}
+
+h1 {
+    color: $color-primary;
 }
 
 .subtitle {
@@ -294,58 +307,48 @@
     }
 }
 
-// .hide_first {                                                   //DO I NEED IT???
-//     @media screen and (max-width: 1279px) {
-//         display: none;
-//     }
-// }
 
-.pet__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $color-light-s;
-    gap: 2.8rem;
-    cursor: $cursor;
-    transition: 300ms;
-    min-width: 5rem;
-    padding-bottom: 3rem;
+// .pet__item {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     align-items: center;
+//     background-color: $color-light-s;
+//     gap: 2.8rem;
+//     cursor: $cursor;
+//     transition: 300ms;
+//     min-width: 5rem;
+//     padding-bottom: 3rem;
 
-    width: 27rem;
-    height: 43.5rem;
+//     width: 27rem;
+//     height: 43.5rem;
     
 
-    @media (max-width: $mobile-width) {
-        gap: 3rem;
-    }
+//     @media (max-width: $mobile-width) {
+//         gap: 3rem;
+//     }
 
-    &:hover {
-        background-color: white;
+//     &:hover {
+//         background-color: white;
 
-        .button {
-            background-color: $color-primary-light;
-        }
-    }
-}
-
-// .hide_second {                                          //DO I NEED THIS?
-//     @media screen and (max-width: 767px) {
-//         display: none;
+//         .button {
+//             background-color: $color-primary-light;
+//         }
 //     }
 // }
 
-.pet_img {
-    width: 27rem;
-    border-radius: 9px 9px 0px 0px;
-}
 
-.pet-name {
-    @extend %font-primary;
-    @include font($size: 2rem, $height: 2.3rem);
-    letter-spacing: 0.06em;
-    color: $color-dark-l;
-}
+// .pet_img {
+//     width: 27rem;
+//     border-radius: 9px 9px 0px 0px;
+// }
+
+// .pet-name {
+//     @extend %font-primary;
+//     @include font($size: 2rem, $height: 2.3rem);
+//     letter-spacing: 0.06em;
+//     color: $color-dark-l;
+// }
 
 .how__to__help__block {
     display: flex;

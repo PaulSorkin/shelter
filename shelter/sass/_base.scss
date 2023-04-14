@@ -18,7 +18,6 @@ body {
 h1 {
   @extend %font-primary;
   @include font($size: 3.2rem, $height: 110%);
-  color: $color-primary;
   letter-spacing: 0.06em;
   margin: 0;
 }
