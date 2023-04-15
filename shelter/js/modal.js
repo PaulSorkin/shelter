@@ -1,8 +1,5 @@
 import pets from '../assets/pets.json' assert { type: "json" };
 
-//const ITEMS_ACTIVE = document.querySelector('#items-active');
-const MODAL_CONTENT = document.querySelector('.modal__contetnt');
-const MODAL_ESSENCE = document.querySelector('.modal_essence');
 const MODAL_WINDOW = document.querySelector('.modal-window');
 const MODAL_WRAPPER = document.querySelector('.modal-wrapper');
 const MODAL_ARROW = document.querySelector('.modal-arrow');
@@ -48,7 +45,6 @@ export function createModal(i) {
     MODAL_WRAPPER.addEventListener('click', closeModal);
     MODAL_ARROW.addEventListener('click', closeModal);
   }
-  //ITEMS_ACTIVE.addEventListener('click', openModal);
   
   export function closeModal(event) {
     MODAL_WINDOW.classList.add('hidden');

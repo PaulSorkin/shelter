@@ -61,8 +61,6 @@ h1 {
     }
 }
 
-
-
 .motto__block {
     padding-bottom: 8rem;
     display: flex;
@@ -205,8 +203,6 @@ h1 {
 
 }
 
-
-
 .all__pets {
     display: flex;
     align-items: center;
@@ -269,10 +265,6 @@ h1 {
     justify-content: space-between;
 }
 
-// @keyframes move-right {
-//     from {left: -990px;}
-//     to {left: -1980px;}
-// }
 @keyframes move-right {
     from {left: -100%;}
     to {left: -200%;}
@@ -283,10 +275,6 @@ h1 {
     animation-duration: 3s;
 }
 
-// @keyframes move-left {
-//     from {left: -990px;}
-//     to {left: 0px;}
-// }
 @keyframes move-left {
     from {left: -100%;}
     to {left: 0%;}
@@ -306,49 +294,6 @@ h1 {
         gap: 4rem;
     }
 }
-
-
-// .pet__item {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     align-items: center;
-//     background-color: $color-light-s;
-//     gap: 2.8rem;
-//     cursor: $cursor;
-//     transition: 300ms;
-//     min-width: 5rem;
-//     padding-bottom: 3rem;
-
-//     width: 27rem;
-//     height: 43.5rem;
-    
-
-//     @media (max-width: $mobile-width) {
-//         gap: 3rem;
-//     }
-
-//     &:hover {
-//         background-color: white;
-
-//         .button {
-//             background-color: $color-primary-light;
-//         }
-//     }
-// }
-
-
-// .pet_img {
-//     width: 27rem;
-//     border-radius: 9px 9px 0px 0px;
-// }
-
-// .pet-name {
-//     @extend %font-primary;
-//     @include font($size: 2rem, $height: 2.3rem);
-//     letter-spacing: 0.06em;
-//     color: $color-dark-l;
-// }
 
 .how__to__help__block {
     display: flex;

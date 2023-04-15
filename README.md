@@ -1,1 +1,1 @@
-# [Deploy](https://github.com/PaulSorkin/shelter.git)
+# [Demo](https://github.com/PaulSorkin/shelter.git)
