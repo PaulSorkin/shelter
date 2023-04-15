@@ -1,5 +1,39 @@
-import pets from '../../assets/pets.json' assert { type: "json" };
+//import pets from '../../assets/pets.json' assert { type: "json" };
+import createPetItem from '../../js/createPetCard.js'
 import { toggleMenu, activeBurger, closeMenu, burger, smallNavList, darken } from '../../js/burger.js';
+import {  openModal } from '../../js/modal.js';
+
+const PET_ITEMS = document.querySelector('.pet__items');
+const tabletWidth = window.matchMedia('(max-width: 1024px)');
+const mobileWidth = window.matchMedia('(max-width: 711px)');
+
+const allCards = [0, 1, 2, 3, 4, 5, 6, 7];
+
+// function createPetItems() {
+//   allCards.forEach((element) => {
+//         PET_ITEMS.append(createPetItem(element));
+//     });
+//   }
+
+  function createPetItems(n) {
+    for (let i=0; i<n; i++) {
+      PET_ITEMS.append(createPetItem(i))
+    }
+  }
+
+let n;
+if (mobileWidth.matches) {
+  n = 3;
+} else {
+  if (tabletWidth.matches) {
+    n = 6;
+} else {
+n = 8;
+}}
+
+  createPetItems(n);
+  PET_ITEMS.addEventListener('click', openModal);
+
 
 
 //Burger====
@@ -27,7 +61,7 @@ import { toggleMenu, activeBurger, closeMenu, burger, smallNavList, darken } fro
 //     }
 // }
 
-burger.addEventListener('click', toggleMenu);
-burger.addEventListener('click', activeBurger);
-smallNavList.addEventListener('click', closeMenu);
-darken.addEventListener('click', closeMenu);
+// burger.addEventListener('click', toggleMenu);
+// burger.addEventListener('click', activeBurger);
+// smallNavList.addEventListener('click', closeMenu);
+// darken.addEventListener('click', closeMenu);

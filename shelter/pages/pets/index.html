@@ -66,62 +66,6 @@
             <div class="wrapper our__friends__block">
                 <h3 class="our_friends_title">Our friends who<br>are looking for a house</h3>
                 <div class="pet__items">
-                    <div class="pet__item">
-                        <div class="pet-pic1">
-                            <img src="../../assets/images/pets/katrine.png" alt="Katrine">
-                        </div>
-                        <div class="pet-name">Katrine</div>
-                        <button class="button button-bordered">Learn more</button>
-                    </div>
-                    <div class="pet__item">
-                        <div class="pet-pic2">
-                            <img src="../../assets/images/pets/jennifer.png" alt="Jennifer">
-                        </div>
-                        <div class="pet-name">Jennifer</div>
-                        <button class="button button-bordered">Learn more</button>
-                    </div>
-                    <div class="pet__item">
-                        <div class="pet-pic3">
-                            <img src="../../assets/images/pets/woody.png" alt="Woody">
-                        </div>
-                        <div class="pet-name">Woody</div>
-                        <button class="button button-bordered">Learn more</button>
-                    </div>
-                    <div class="pet__item hide-second">
-                        <div class="pet-pic3">
-                            <img class="pet-photo" src="../../assets/images/pets/pets-katrine.png" alt="Sophia">
-                        </div>
-                        <div class="pet-name">Sophia</div>
-                        <button class="button button-bordered">Learn more</button>
-                    </div>
-                    <div class="pet__item hide-second">
-                        <div class="pet-pic3">
-                            <img src="../../assets/images/pets/timmy.png" alt="Timmy">
-                        </div>
-                        <div class="pet-name">Timmy</div>
-                        <button class="button button-bordered">Learn more</button>
-                    </div>
-                    <div class="pet__item hide-second">
-                        <div class="pet-pic3">
-                            <img class="pet-photo" src="../../assets/images/pets/pets-charly.png" alt="Charly">
-                        </div>
-                        <div class="pet-name">Charly</div>
-                        <button class="button button-bordered">Learn more</button>
-                    </div>
-                    <div class="pet__item hide-first">
-                        <div class="pet-pic3">
-                            <img src="../../assets/images/pets/scarlett.png" alt="Scarlett">
-                        </div>
-                        <div class="pet-name">Scarlett</div>
-                        <button class="button button-bordered">Learn more</button>
-                    </div>
-                    <div class="pet__item hide-first">
-                        <div class="pet-pic3">
-                            <img src="../../assets/images/pets/freddie.png" alt="Freddie">
-                        </div>
-                        <div class="pet-name">Freddie</div>
-                        <button class="button button-bordered">Learn more</button>
-                    </div>
                 </div>
                 <div class="paginator__buttons">
                     <button class="button_disabled button-bordered">< <</button>
@@ -164,6 +108,31 @@
             <img class="contacts_pet_pic" src="../../assets/images/footer-puppy.png" alt="puppy">
         </div>
     </footer>
+    <div class="modal-wrapper hidden"></div>
+    <div class="modal-window hidden">
+        <button class="modal-arrow arrow">X</button>
+        <div class="modal__contetnt">
+            <div class="modal_pic_wrapper">
+                <img class="modal_pic"></img>
+            </div>
+            <div class="modal_essence">
+                <div class="modal_essence_head">
+                    <p class="modal-name"></p>
+                    <p class="modal-type"></p>
+                </div>
+                <p class="modal-description"></p>
+                <ul class="modal-facts">
+                    <li class="modal-fact"><span class="bold">Age: </span><span class="fact" id="fact1"></span></li>
+                    <li class="modal-fact"><span class="bold">Inoculations: </span><span class="fact" id="fact2"></span>
+                    </li>
+                    <li class="modal-fact"><span class="bold">Diseases: </span><span class="fact" id="fact3"></span>
+                    </li>
+                    <li class="modal-fact"><span class="bold">Parasites: </span><span class="fact" id="fact4"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script type="module" src="./script.js"></script>
 </body>
 
